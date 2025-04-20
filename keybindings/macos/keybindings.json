@@ -1,0 +1,105 @@
+[
+   {
+      "key": "alt+cmd+l",
+      "command": "editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+   },
+   {
+      "key": "alt+cmd+l",
+      "command": "editor.action.formatDocument.none",
+      "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+   },
+   {
+      "key": "cmd+1",
+      "command": "workbench.action.toggleAuxiliaryBar"
+   },
+   {
+      "key": "cmd+2",
+      "command": "workbench.action.togglePanel"
+   },
+   {
+      "key": "cmd+3",
+      "command": "workbench.action.toggleSidebarVisibility"
+   },
+   {
+      "key": "shift shift",
+      "command": "workbench.action.quickOpen"
+   },
+   {
+      "key": "shift shift",
+      "command": "workbench.action.closeQuickOpen",
+      "when": "inQuickOpen"
+   },
+   {
+      "key": "alt alt",
+      "command": "workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+   },
+   {
+      "key": "alt+F12",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "!terminalFocus"
+   },
+   {
+      "key": "alt+F12",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminalFocus"
+   },
+   {
+      "key": "cmd+2",
+      "command": "-workbench.action.focusSecondEditorGroup"
+   },
+
+   {
+      "key": "cmd+j",
+      "command": "-workbench.action.togglePanel"
+   },
+   {
+      "key": "cmd+3",
+      "command": "-workbench.action.focusThirdEditorGroup"
+   },
+   {
+      "key": "alt+cmd+b",
+      "command": "-workbench.action.toggleAuxiliaryBar"
+   },
+   {
+      "key": "cmd+d",
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
+   },
+   {
+      "key": "cmd+d",
+      "command": "-notebook.addFindMatchToSelection",
+      "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+   },
+   {
+      "key": "cmd+d",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "-editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "cmd+d",
+      "command": "notebook.cell.copyDown",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "-notebook.cell.copyDown",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "cmd+d",
+      "command": "markdown.extension.onCopyLineDown",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "-markdown.extension.onCopyLineDown",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   }
+]
